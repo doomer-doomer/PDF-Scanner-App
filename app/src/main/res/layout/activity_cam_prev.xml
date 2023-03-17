@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CamPrev"
+    android:background="#CDCDCD">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/cardview_dark_background"
+            android:backgroundTint="#CDCBCE">
+
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/editbtnfor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:drawable/dialog_frame"
+            android:backgroundTint="#D8D8D8"
+            android:textAlignment="center"
+            android:textColor="#5E5D5F">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="EDIT PICTURES"
+            android:textAlignment="center">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/mycountforcam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textColor="#5E5D5F"
+        app:layout_constraintBottom_toTopOf="@+id/backbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_finder"
+        app:layout_constraintVertical_bias="0.444">
+
+    </TextView>
+
+
+    <TextureView
+        android:id="@+id/view_finder"
+        android:layout_width="320dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.30">
+
+    </TextureView>
+
+    <ImageButton
+        android:id="@+id/img_cap"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/cam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_finder"
+        app:layout_constraintVertical_bias="0.502">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="84dp"
+        android:background="@drawable/backtomain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_finder"
+        app:layout_constraintVertical_bias="0.502">
+
+    </ImageButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

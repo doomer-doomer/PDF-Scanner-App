@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgbox3"
+    android:backgroundTint="#D8D8D8"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="4dp">
+
+
+    <ImageButton
+        android:id="@+id/moreoptions"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#444140"
+        android:background="@drawable/more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toEndOf="@+id/textname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146">
+
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:tooltipText="Open PDF"
+        android:background="@drawable/bgbox3"
+        android:backgroundTint="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514"
+         />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/robetoblk"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:tooltipText="Name"
+        app:layout_constrainedWidth="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/robetotxt"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/editbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textname"
+        app:layout_constraintVertical_bias="0.1">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/shareicon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@android:drawable/ic_menu_share"
+        android:backgroundTint="#444140"
+        android:tooltipText="Share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textname"
+        app:layout_constraintVertical_bias="0.873">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/deletebtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@android:drawable/ic_menu_delete"
+        android:backgroundTint="#444140"
+        android:tooltipText="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textname"
+        app:layout_constraintVertical_bias="0.873">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/editbtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@android:drawable/ic_menu_edit"
+        android:backgroundTint="#444140"
+        android:tooltipText="Rename"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textname"
+        app:layout_constraintVertical_bias="0.873">
+
+    </ImageButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
